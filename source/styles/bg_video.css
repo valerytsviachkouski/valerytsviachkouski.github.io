@@ -1,0 +1,39 @@
+.bgvideo {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgvideo video {
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* указываем слои*/
+    z-index:1;
+}
+
+/* затемняем видещ, делаем менее ярким
+накладываем на него слой*/
+.effect {
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* указываем слои*/
+    z-index:2;
+    background-color: rgba(36, 36, 39, 0.14);
+}
+
+.video-text {
+    color: aqua;
+    z-index:2;
+}
+
